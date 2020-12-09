@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>6024d91e-651c-490b-bcd4-7860d89b75e5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FM.Application\FM.Application.csproj" />
+    <ProjectReference Include="..\FM.Infrastructure.Data\FM.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\FM.Infrastructure.IoC\FM.Infrastructure.IoC.csproj" />
+  </ItemGroup>
+
+
+</Project>
