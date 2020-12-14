@@ -16,14 +16,12 @@ namespace FM.Api.Controllers
         }
 
         [HttpGet]
-        [EnableCors("Open")]
         public BillsListDTO Get()
         {
             return _billService.GetAllBills();
         }
 
         [HttpGet("{id}")]
-        [EnableCors("Open")]
         public BillDTO Get(int id)
         {
             return _billService.GetBillById(id);
